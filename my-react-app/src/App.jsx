@@ -1,16 +1,24 @@
 import { useState } from 'react'
 
 function App() {
+  const donneeFictifFruit = ['ananas', 'pomme', 'fraise', 'poire']
 
-  const [Ouvert, setOuvert] = useState(0);
-  const [count, setCount] = useState(0);
+  const [ouvert, setOuvert] = useState(false)
+
   return (
     <>
       <section id="App">
-        <p>Vous avez cliqué {count} fois</p>
-        <button onClick={() => setCount(count + 1)}>
-          Cliquez ici
+        <button className="App__selecteur" id="selecteur" onClick={() => setOuvert(!ouvert)}>
+          Sélectionner
         </button>
+
+        {ouvert && (
+          <ul>
+            {donneeFictifFruit.map((fruit, index) => (
+              <li key={index}>{fruit}</li>
+            ))}
+          </ul>
+        )}
       </section>
     </>
   )
