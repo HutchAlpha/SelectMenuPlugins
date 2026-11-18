@@ -3,6 +3,8 @@ Ce projet est préparé pour l'oral sur Openclassroom (Faites passer une librair
 Si vous avez des difficulté a l'intaler ou a l'utiliser, n'hésitez pas a me contacter en privé
 quentinboisset50470@gmail.com
 
+L'objectif du projet est d'automatiser les selectmenu afin d'éviter de le recréer a la main, on va les appeler les selecteurs
+
 
 # Premiére instalation
 Pour votre premiére instalation du projet, voici comment le realiser : 
@@ -21,5 +23,12 @@ npm create vite@latest my-react-app -- --template react;
 
 # Lancer le Front
 
+```bash
 cd my-react-app
 npm run dev
+```
+
+## Maintenant comment utiliser la logique du selecteur ?
+
+
+
