@@ -30,5 +30,15 @@ npm run dev
 
 ## Maintenant comment utiliser la logique du selecteur ?
 
+D'abbord pour que le selecteurs fonctionne correctement, il faudra définir les donnée qui devront être affiché dans le selecteur
+
+```
+ const donneeSelecteur = [
+    'donnee0', 
+    'donnee1', 
+    'donnee2', 
+    'donnee3'
+];
+```
 
 

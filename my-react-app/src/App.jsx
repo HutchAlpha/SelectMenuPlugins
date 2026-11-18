@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import "./style.scss";
 function App() {
-  const donneeFictifFruit = ['ananas', 'pomme', 'fraise', 'poire'];
+  const donneeSelecteur = ['ananas', 'pomme', 'fraise', 'poire'];
 
   const [ouvert, setOuvert] = useState(false);
 
@@ -13,9 +13,9 @@ function App() {
         </button>
 
         {ouvert && (
-          <ul>
-            {donneeFictifFruit.map((fruit, index) => (
-              <li key={index}>{fruit}</li>
+          <ul className="App__selecteurUl">
+            {donneeSelecteur.map((donneeS, index) => (
+              <li key={index} className="App__selecteurLi">| {donneeS}</li>
             ))}
           </ul>
         )}
