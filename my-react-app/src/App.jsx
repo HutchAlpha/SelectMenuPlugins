@@ -1,9 +1,9 @@
 import { useState } from 'react'
-
+import "./style.scss";
 function App() {
-  const donneeFictifFruit = ['ananas', 'pomme', 'fraise', 'poire']
+  const donneeFictifFruit = ['ananas', 'pomme', 'fraise', 'poire'];
 
-  const [ouvert, setOuvert] = useState(false)
+  const [ouvert, setOuvert] = useState(false);
 
   return (
     <>
